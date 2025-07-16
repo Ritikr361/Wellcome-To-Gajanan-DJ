@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
@@ -74,43 +75,31 @@
             align-items: center;
             transition: opacity 0.5s ease-out;
         }
-        .speaker {
-            width: 200px;
-            height: 200px;
-            background-color: #1f2937;
-            border-radius: 12px;
+        .equalizer {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            animation: radium-glow 2s infinite linear;
+            align-items: flex-end;
+            height: 100px;
         }
-        .speaker-cone {
-            width: 120px;
-            height: 120px;
-            background-color: #111827;
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: vibrate 0.2s infinite linear;
+        .equalizer span {
+            display: block;
+            width: 15px;
+            background: linear-gradient(to top, #ec4899, #0ea5e9);
+            margin: 0 4px;
+            animation: dance 1.5s infinite linear;
+            border-radius: 4px 4px 0 0;
         }
-        .speaker-dot {
-            width: 30px;
-            height: 30px;
-            background-color: #374151;
-            border-radius: 50%;
+        @keyframes dance {
+            0% { height: 10%; }
+            25% { height: 100%; }
+            50% { height: 40%; }
+            75% { height: 75%; }
+            100% { height: 10%; }
         }
-        @keyframes vibrate {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-            100% { transform: scale(1); }
-        }
-        @keyframes radium-glow {
-            0% { box-shadow: 0 0 10px #0ea5e9, 0 0 20px #ec4899; }
-            50% { box-shadow: 0 0 20px #0ea5e9, 0 0 40px #ec4899; }
-            100% { box-shadow: 0 0 10px #0ea5e9, 0 0 20px #ec4899; }
-        }
+        .equalizer span:nth-child(2) { animation-delay: 0.2s; }
+        .equalizer span:nth-child(3) { animation-delay: 0.4s; }
+        .equalizer span:nth-child(4) { animation-delay: 0.6s; }
+        .equalizer span:nth-child(5) { animation-delay: 0.8s; }
+        
         .splash-text {
             margin-top: 2rem;
             text-align: center;
@@ -141,10 +130,12 @@
 
     <!-- Splash Screen -->
     <div id="splash-screen">
-        <div class="speaker">
-            <div class="speaker-cone">
-                <div class="speaker-dot"></div>
-            </div>
+        <div class="equalizer">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <div class="splash-text">
             <h1>GAJANAN</h1>

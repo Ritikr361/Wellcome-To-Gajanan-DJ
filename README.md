@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gajanan Sound & DJ - Club & Event Experts</title>
+    <title>GAJANAN SOUND & DJ - Club & Event Experts</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- AOS Animation Library CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -14,16 +16,19 @@
             scroll-behavior: smooth;
         }
         body {
-            font-family: 'Exo 2', sans-serif;
+            font-family: 'Poppins', sans-serif;
             background-color: #111827; /* bg-gray-900 */
+        }
+        .font-monoton {
+            font-family: 'Monoton', cursive;
         }
         .neon-text {
             color: #fff;
             text-shadow:
-                0 0 5px #0ea5e9,
+                0 0 7px #0ea5e9,
                 0 0 10px #0ea5e9,
-                0 0 20px #0ea5e9,
-                0 0 40px #0ea5e9;
+                0 0 21px #0ea5e9,
+                0 0 42px #0ea5e9;
         }
         .neon-box-blue {
             box-shadow: 0 0 5px #0ea5e9, 0 0 15px #0ea5e9;
@@ -48,9 +53,9 @@
 
     <!-- Header / Navbar -->
     <header id="navbar" class="bg-gray-900/70 backdrop-blur-lg sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-2xl font-bold tracking-wider neon-text">
-                <i class="fa-solid fa-waveform-lines text-sky-400"></i> Gajanan Sound & DJ
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl sm:text-2xl font-monoton tracking-wider text-white">
+                <i class="fa-solid fa-waveform-lines text-sky-400"></i> GAJANAN SOUND & DJ
             </a>
             <nav class="hidden md:flex space-x-8">
                 <a href="#home" class="nav-link transition duration-300 text-gray-400 hover:text-sky-400">Home</a>
@@ -60,28 +65,26 @@
                 <a href="#pricing" class="nav-link transition duration-300 text-gray-400 hover:text-sky-400">Pricing</a>
                 <a href="#contact" class="nav-link transition duration-300 text-gray-400 hover:text-sky-400">Contact</a>
             </nav>
-            <a href="#contact" class="hidden md:inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 neon-box-blue">Contact Us</a>
-            <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
+            <a href="#contact" class="hidden lg:inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300 neon-box-blue">Contact Us</a>
+            <button id="mobile-menu-button" class="md:hidden text-white text-2xl p-2">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-gray-800">
-            <a href="#home" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Home</a>
-            <a href="#services" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Services</a>
-            <a href="#work" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Our Work</a>
-            <a href="#team" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Our Team</a>
-            <a href="#pricing" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Pricing</a>
-            <a href="#videos" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Videos</a>
-            <a href="#testimonials" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Testimonials</a>
-            <a href="#contact" class="nav-link block py-2 px-4 text-sm hover:bg-gray-700">Contact Us</a>
+            <a href="#home" class="nav-link block py-3 px-4 text-base hover:bg-gray-700">Home</a>
+            <a href="#services" class="nav-link block py-3 px-4 text-base hover:bg-gray-700">Services</a>
+            <a href="#work" class="nav-link block py-3 px-4 text-base hover:bg-gray-700">Our Work</a>
+            <a href="#team" class="nav-link block py-3 px-4 text-base hover:bg-gray-700">Our Team</a>
+            <a href="#pricing" class="nav-link block py-3 px-4 text-base hover:bg-gray-700">Pricing</a>
+            <a href="#contact" class="nav-link block py-3 px-4 text-base hover:bg-gray-700">Contact Us</a>
         </div>
     </header>
 
     <main>
         <!-- Home Section -->
         <section id="home">
-            <div class="relative h-[60vh] md:h-[90vh] text-white overflow-hidden">
+            <div class="relative h-[70vh] md:h-[90vh] text-white overflow-hidden">
                 <!-- Static Background Image -->
                 <div class="absolute inset-0">
                      <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1974&auto=format&fit=crop" onerror="this.onerror=null;this.src='https://placehold.co/1920x1080/000000/FFFFFF?text=Live+Concert';" class="w-full h-full object-cover" alt="Live Concert Stage">
@@ -89,8 +92,8 @@
                 <!-- Overlay -->
                 <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
                     <div class="text-center px-4" data-aos="zoom-in">
-                        <h1 class="text-4xl md:text-7xl font-extrabold mb-4 drop-shadow-lg neon-text">Feel The Vibe, Hear The Beat</h1>
-                        <p class="text-lg md:text-2xl mb-8 text-gray-300 drop-shadow-md">High-End Light & Sound For Unforgettable Nights</p>
+                        <h1 class="font-monoton text-4xl sm:text-5xl md:text-7xl mb-4 drop-shadow-lg neon-text">Feel The Vibe</h1>
+                        <p class="text-lg md:text-2xl mb-8 text-gray-300 drop-shadow-md font-semibold">High-End Light & Sound For Unforgettable Nights</p>
                         <a href="#work" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 transform hover:scale-105 neon-box-pink">See Our Events</a>
                     </div>
                 </div>
@@ -98,13 +101,13 @@
         </section>
 
         <!-- Services Section -->
-        <section id="services" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-6">
+        <section id="services" class="py-16 md:py-20 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-12" data-aos="fade-down">
-                    <h2 class="text-4xl font-bold text-white">Our Expertise</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Our Expertise</h2>
                     <p class="text-gray-400 mt-2">We power events that make a statement.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Service Card 1 -->
                     <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="100">
                         <i class="fa-solid fa-champagne-glasses text-5xl text-sky-400 mb-4"></i>
@@ -134,10 +137,10 @@
         </section>
 
         <!-- Our Work / Portfolio Section -->
-        <section id="work" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6">
+        <section id="work" class="py-16 md:py-20 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-12" data-aos="fade-down">
-                    <h2 class="text-4xl font-bold text-white">Event Gallery</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Event Gallery</h2>
                     <p class="text-gray-400 mt-2">A glimpse into the experiences we create.</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -160,10 +163,10 @@
         </section>
 
         <!-- Pricing Section -->
-        <section id="pricing" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-6">
+        <section id="pricing" class="py-16 md:py-20 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-12" data-aos="fade-down">
-                    <h2 class="text-4xl font-bold text-white">Event Packages</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Event Packages</h2>
                     <p class="text-gray-400 mt-2">Choose the perfect power-pack for your event.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -207,13 +210,13 @@
         </section>
         
         <!-- Team Section -->
-        <section id="team" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6">
+        <section id="team" class="py-16 md:py-20 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-12" data-aos="fade-down">
-                    <h2 class="text-4xl font-bold text-white">The Crew</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">The Crew</h2>
                     <p class="text-gray-400 mt-2">The masterminds behind the console.</p>
                 </div>
-                <div class="flex flex-wrap justify-center gap-8">
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12">
                     <!-- Founder Card -->
                     <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                         <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1752681317/g0bibqhoyardg0n2ggaq.jpg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/f97316/FFFFFF?text=V';" alt="Founder Vinay" class="w-36 h-36 mx-auto rounded-full shadow-lg border-4 border-sky-500 mb-4 object-cover">
@@ -231,15 +234,15 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-6">
+        <section id="contact" class="py-16 md:py-20 bg-gray-800">
+            <div class="container mx-auto px-4 sm:px-6">
                 <div class="text-center mb-12" data-aos="fade-down">
-                    <h2 class="text-4xl font-bold text-white">Book Your Date</h2>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Book Your Date</h2>
                     <p class="text-gray-400 mt-2">Let's plan an event that they'll talk about for years.</p>
                 </div>
-                <div class="flex flex-wrap -mx-4">
-                    <div class="w-full lg:w-1/2 px-4 mb-8 lg:mb-0" data-aos="fade-right">
-                        <div class="bg-gray-900 rounded-lg p-8 shadow-lg">
+                <div class="flex flex-col lg:flex-row gap-8">
+                    <div class="w-full lg:w-1/2" data-aos="fade-right">
+                        <div class="bg-gray-900 rounded-lg p-8 shadow-lg h-full">
                             <form id="contactForm">
                                 <div class="mb-4"><label for="name" class="block text-gray-400 mb-2">Name</label><input type="text" id="name" name="name" class="w-full bg-gray-800 text-white rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-sky-500" required></div>
                                 <div class="mb-4"><label for="email" class="block text-gray-400 mb-2">Email</label><input type="email" id="email" name="email" class="w-full bg-gray-800 text-white rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-sky-500" required></div>
@@ -248,10 +251,10 @@
                             </form>
                         </div>
                     </div>
-                    <div class="w-full lg:w-1/2 px-4" data-aos="fade-left">
+                    <div class="w-full lg:w-1/2" data-aos="fade-left">
                         <div class="bg-gray-900 rounded-lg p-8 h-full flex flex-col justify-center shadow-lg">
                             <div class="mb-6"><h3 class="text-xl font-bold text-white mb-2 flex items-center"><i class="fas fa-phone-alt text-sky-400 mr-3"></i> Phone</h3><a href="tel:+917489600750" class="text-gray-300 hover:text-sky-400">+91 74896 00750</a></div>
-                            <div class="mb-6"><h3 class="text-xl font-bold text-white mb-2 flex items-center"><i class="fas fa-envelope text-sky-400 mr-3"></i> Email</h3><a href="mailto:contact@gajananlightsound.com" class="text-gray-300 hover:text-sky-400">contact@gajananlightsound.com</a></div>
+                            <div class="mb-6"><h3 class="text-xl font-bold text-white mb-2 flex items-center"><i class="fas fa-envelope text-sky-400 mr-3"></i> Email</h3><a href="mailto:contact@gajanansounddj.com" class="text-gray-300 hover:text-sky-400">contact@gajanansounddj.com</a></div>
                             <div><h3 class="text-xl font-bold text-white mb-2 flex items-center"><i class="fas fa-map-marker-alt text-sky-400 mr-3"></i> Address</h3><p class="text-gray-300">Rajgarh Naka, Jhabua, Madhya Pradesh, India</p></div>
                         </div>
                     </div>
@@ -264,7 +267,7 @@
     <footer class="bg-gray-900 border-t border-gray-800">
         <div class="container mx-auto px-6 py-8 text-center text-gray-400">
             <div class="flex justify-center space-x-6 mb-4"><a href="#" class="text-2xl hover:text-sky-400 transition duration-300"><i class="fab fa-facebook"></i></a><a href="#" class="text-2xl hover:text-pink-400 transition duration-300"><i class="fab fa-instagram"></i></a><a href="#" class="text-2xl hover:text-red-500 transition duration-300"><i class="fab fa-youtube"></i></a></div>
-            <p>&copy; 2024 Gajanan Sound & DJ. All Rights Reserved.</p>
+            <p>&copy; 2024 GAJANAN SOUND & DJ. All Rights Reserved.</p>
             <p class="text-sm mt-2">Engineered for the night.</p>
         </div>
     </footer>
@@ -296,8 +299,6 @@
 
     <!-- AOS Animation Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Instagram Embed JS -->
-    <script async src="//www.instagram.com/embed.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             AOS.init({ duration: 800, once: true });
@@ -369,7 +370,7 @@
                 const email = document.getElementById('email').value;
                 const message = document.getElementById('message').value;
                 const phone = '7489600750';
-                const whatsappMessage = `Hello Gajanan Sound & DJ,\n\nNew Inquiry:\n\n*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`;
+                const whatsappMessage = `Hello GAJANAN SOUND & DJ,\n\nNew Inquiry:\n\n*Name:* ${name}\n*Email:* ${email}\n*Message:* ${message}`;
                 const encodedMessage = encodeURIComponent(whatsappMessage);
                 const whatsappUrl = `https://wa.me/91${phone}?text=${encodedMessage}`;
                 window.open(whatsappUrl, '_blank');

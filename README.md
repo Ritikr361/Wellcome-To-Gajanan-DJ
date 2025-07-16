@@ -17,6 +17,7 @@
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #111827; /* bg-gray-900 */
+            overflow-x: hidden; /* Prevents horizontal scroll/shake */
         }
         .font-monoton {
             font-family: 'Monoton', cursive;
@@ -201,25 +202,25 @@
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         <!-- Service Card 1 -->
-                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="100">
                             <i class="fa-solid fa-champagne-glasses text-5xl text-sky-400 mb-4"></i>
                             <h3 class="text-xl font-bold mb-2 text-white">Private Parties</h3>
                             <p class="text-gray-400">Exclusive setups for birthdays, anniversaries, and private celebrations.</p>
                         </div>
                         <!-- Service Card 2 -->
-                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="200">
                             <i class="fa-solid fa-record-vinyl text-5xl text-sky-400 mb-4"></i>
                             <h3 class="text-xl font-bold mb-2 text-white">DJ Nights & Pubs</h3>
                             <p class="text-gray-400">Pulsating sound and dynamic lights for the ultimate clubbing experience.</p>
                         </div>
                         <!-- Service Card 3 -->
-                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="300">
                             <i class="fa-solid fa-building-columns text-5xl text-sky-400 mb-4"></i>
                             <h3 class="text-xl font-bold mb-2 text-white">Corporate Events</h3>
                             <p class="text-gray-400">Professional and sleek AV solutions for launches, conferences, and galas.</p>
                         </div>
                         <!-- Service Card 4 -->
-                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="400" data-tilt data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="bg-gray-900 rounded-lg p-6 text-center transform hover:-translate-y-2 transition duration-300 shadow-lg hover:shadow-sky-500/40" data-aos="fade-up" data-aos-delay="400">
                             <i class="fa-solid fa-masks-theater text-5xl text-sky-400 mb-4"></i>
                             <h3 class="text-xl font-bold mb-2 text-white">Live Concerts</h3>
                             <p class="text-gray-400">Massive stage setups with concert-grade sound and lighting trusses.</p>
@@ -263,7 +264,7 @@
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
                         <!-- Basic Package -->
-                        <div class="bg-gray-900 rounded-lg p-8 border-2 border-gray-700 text-center flex flex-col" data-aos="flip-left" data-aos-delay="100" data-tilt>
+                        <div class="bg-gray-900 rounded-lg p-8 border-2 border-gray-700 text-center flex flex-col" data-aos="fade-up" data-aos-delay="100">
                             <h3 class="text-2xl font-bold text-sky-400 mb-4">Ignite</h3>
                             <p class="text-4xl font-extrabold text-white mb-4">₹20,000 <span class="text-lg font-normal text-gray-400">/event</span></p>
                             <ul class="text-gray-400 space-y-2 mb-8 text-left flex-grow">
@@ -274,7 +275,7 @@
                             <a href="#contact" class="mt-auto bg-gray-700 hover:bg-sky-500 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Book Now</a>
                         </div>
                         <!-- Premium Package -->
-                        <div class="bg-gray-900 rounded-lg p-8 border-2 border-pink-500 text-center flex flex-col transform md:scale-105 shadow-2xl shadow-pink-500/30" data-aos="flip-up" data-aos-delay="200" data-tilt>
+                        <div class="bg-gray-900 rounded-lg p-8 border-2 border-pink-500 text-center flex flex-col transform md:scale-105 shadow-2xl shadow-pink-500/30" data-aos="fade-up" data-aos-delay="200">
                             <p class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-pink-500 text-white text-xs font-bold px-3 py-1 rounded-full">PRO'S CHOICE</p>
                             <h3 class="text-2xl font-bold text-pink-400 mb-4">Overdrive</h3>
                             <p class="text-4xl font-extrabold text-white mb-4">₹50,000 <span class="text-lg font-normal text-gray-400">/event</span></p>
@@ -287,7 +288,7 @@
                             <a href="#contact" class="mt-auto bg-pink-500 hover:bg-pink-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Book Now</a>
                         </div>
                         <!-- Custom Package -->
-                        <div class="bg-gray-900 rounded-lg p-8 border-2 border-gray-700 text-center flex flex-col" data-aos="flip-right" data-aos-delay="300" data-tilt>
+                        <div class="bg-gray-900 rounded-lg p-8 border-2 border-gray-700 text-center flex flex-col" data-aos="fade-up" data-aos-delay="300">
                             <h3 class="text-2xl font-bold text-sky-400 mb-4">Apocalypse</h3>
                             <p class="text-4xl font-extrabold text-white mb-4">Let's Talk</p>
                             <ul class="text-gray-400 space-y-2 mb-8 text-left flex-grow">
@@ -310,13 +311,13 @@
                     </div>
                     <div class="flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12">
                         <!-- Founder Card -->
-                        <div class="text-center" data-aos="fade-up" data-aos-delay="100" data-tilt>
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
                             <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1752681317/g0bibqhoyardg0n2ggaq.jpg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/f97316/FFFFFF?text=V';" alt="Founder Vinay" class="w-36 h-36 mx-auto rounded-full shadow-lg border-4 border-sky-500 mb-4 object-cover">
                             <h3 class="text-xl font-bold text-white">Vinnay Verma</h3>
                             <p class="text-sky-400">Founder</p>
                         </div>
                         <!-- Co-Founder Card -->
-                        <div class="text-center" data-aos="fade-up" data-aos-delay="200" data-tilt>
+                        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
                             <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1752681371/orrjv6zq0fcr2qwgqmi6.jpg" onerror="this.onerror=null;this.src='https://placehold.co/150x150/3b82f6/FFFFFF?text=HG';" alt="Co-Founder Harsh Gupta" class="w-36 h-36 mx-auto rounded-full shadow-lg border-4 border-pink-500 mb-4 object-cover">
                             <h3 class="text-xl font-bold text-white">Harsh Gupta</h3>
                             <p class="text-pink-400">Co-Founder</p>
@@ -392,8 +393,6 @@
 
     <!-- AOS Animation Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Tilt.js for 3D effect -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const splash = document.getElementById('splash-screen');
@@ -405,10 +404,6 @@
                     splash.style.display = 'none';
                     mainContent.classList.remove('hidden-content');
                      AOS.init({ duration: 800, once: true });
-                     VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-		                max: 15,
-		                speed: 400
-	                });
                 }, { once: true });
 
             }, 3000);
